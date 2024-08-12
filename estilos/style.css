@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root {
+    --azul-primario: #0d121e;
+    --azul-secundario: #080b16;
+    --laranja-claro: #f0b35b;
+    --branco-padrao: #fff;
+    --branco-secundario: #fafafa;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background-color: var(--azul-secundario);
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.material-symbols-outlined {
+    color: var(--laranja-claro);
+}
+
+button {
+    background-color: var(--laranja-claro);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 16px;
+    padding: 0px 5px;
+}
+
+/* Seção Pincipal */
+
+.main-section {
+    background: linear-gradient(#080b16,  #080b16dc, #080b16) , url(../imagens/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    color: var(--branco-secundario);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sobre */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #080b16;
+    color: var(--branco-secundario);
+}
+
+
+
