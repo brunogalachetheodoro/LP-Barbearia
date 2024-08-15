@@ -131,6 +131,10 @@ nav {
     padding: 20px;
 }
 
+.about p{
+    font-size: 12px;
+}
+
 .negrito {
     font-weight: bolder;
 }
@@ -143,6 +147,15 @@ nav {
     text-align: center;
     align-items: center;
     padding: 20px;
+}
+
+.servicos p {
+    font-size: 12px;
+}
+
+.ajuste-servicos {
+    display: flex;
+    flex-direction: column      ;
 }
 
 .servicos-disponiveis {
