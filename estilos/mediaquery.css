@@ -45,11 +45,11 @@
     }
 
     .sobre-imagens {
-        padding: 80px;
+        padding: 80px 0px 30px 250px;
     }
 
     .about {
-        padding: 10px 80px;
+        padding: 80px 300px 30px 100px;
         font-size: 14px;
         justify-content: center;
     }
@@ -60,8 +60,12 @@
 
      /* Serviços */
 
-     .servicos {
-        padding: 0px 100px;
+    .servicos {
+        padding: 0px 350px;
+    }
+
+    .servicos p {
+        padding: 3px 2px;
     }
 
     .ajuste-servicos {
@@ -72,7 +76,45 @@
         margin: 0px 50px;
         margin-bottom: 50px;
     }
+
+    /* Equipe */
+
+    .equipe {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .espacamento {
+        margin: 50px 20px;
+    }
+
+    .texto-horizontal {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    /* Unidades */
+
+    .unidades section {
+        display: flex;
+    }
+
+    .unidades h2 {
+        padding-bottom: 20px;
+    }
+   
+    .unidades section div {
+        margin: 0px 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Footer */
+
+    .logo-azul {
+        padding-bottom: 50px;
+    }
 }
+
 
 /* Desktop */
 
