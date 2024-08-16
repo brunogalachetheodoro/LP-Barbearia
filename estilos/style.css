@@ -23,7 +23,7 @@ h1, h2, h3  {
     font-family: 'Quicksand';
 }
 
-p {
+p, a {
     font-family: 'Open Sans';
 }
 
@@ -47,10 +47,6 @@ header {
     height: 50px;
 }
 
-.material-symbols-outlined {
-    color: var(--laranja-claro);
-}
-
 button {
     background-color: var(--laranja-claro);
     border: none;
@@ -69,9 +65,44 @@ button img {
     padding: 0px 5px;
 }
 
-nav {
+
+#menu-mobile {
+    color: var(--laranja-claro);
     cursor: pointer;
+    font-size: 28px;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    position: absolute;
+    margin-top: 30px;
+    width: 80px;
+    background-color: var(--azul-secundario);
+    line-height: 60px;
+    list-style: none;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--laranja-claro);
+}
+
+#menuescondido {
+    display: none;
+}
+
 
 /* Seção Pincipal */
 

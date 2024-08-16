@@ -24,8 +24,24 @@
         margin-right: 100px;
     }
 
-    .material-symbols-outlined {
+    ul {
+        position: relative;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #menu-mobile {
         display: none;
+    }
+
+    #menuescondido {
+        display: flex;
+    }
+
+    li {
+        padding: 0px 20px;
     }
 
     /* Seção Principal */
@@ -134,16 +150,35 @@
 
     nav {
         order: 2;
+
     }
 
     button {
         order: 3;
         margin-right: 20px;
+    } 
+
+    ul {
+        position: relative;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
 
-    .material-symbols-outlined {
+    #menu-mobile {
         display: none;
     }
+
+    li {
+        padding: 0px 20px;
+    }
+
+    #menuescondido {
+        display: flex;
+    }        
+
+
 
     /* Seção Principal */
 

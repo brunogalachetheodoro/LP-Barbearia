@@ -17,9 +17,16 @@
     <header>
         
         <nav>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" id="menu-mobile" onclick="clickMenu()">
                 menu
-                </span>
+            </span>
+
+            <ul id="menuescondido">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#unidades">Unidades</a></li>
+            </ul>
         </nav>
 
         <img class="logo" src="imagens/logo/logo.png" alt="">
@@ -38,7 +45,7 @@
         </a>
     </section>
 
-    <section class="ajuste-sobre">
+    <section class="ajuste-sobre" id="sobre">
         <section class="sobre-imagens">
             <div id="ajuste-img-sobre"><img src="imagens/barbeiro/barbeiro-1.jpg" alt=""></div>
             <div class="sobre-imagens-2">
@@ -54,7 +61,7 @@
         </section>
     </section>
     
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <h2>SERVIÇOS</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ab autem. Dignissimos incidunt quisquam quia, tenetur temporibus, possimus voluptatum veniam similique harum suscipit voluptatem! </p>
 
@@ -81,14 +88,14 @@
 
     </section>
 
-    <section class="equipe">
+    <section class="equipe" id="equipe">
         <h2 class="texto-horizontal">NOSSA EQUIPE</h2>
         <div class="img-equipe img-equipe-1 espacamento"><p>João Pedro</p></div>
         <div class="img-equipe img-equipe-2 espacamento "><p>Heitor</p></div>
         <div class="img-equipe img-equipe-3 espacamento"><p>Thiago</p></div>
     </section>
 
-    <section class="unidades">
+    <section class="unidades" id="unidades">
         <h2>NOSSAS UNIDADES</h2>
         <section>
             <div class="img-endereco endereco-1"><p>Av. Robert Koch, 1100</p> <p class="fonte">Bairro Aeroporto</p></div>
@@ -105,5 +112,27 @@
             <img class="logo-azul" src="imagens/logo/logo-azul.png" alt="">
         </div>
     </footer>
+    
+    <script>
+       
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            function clickMenu() {
+                if (menuescondido.style.display == 'block') {
+                    menuescondido.style.display = 'none'; 
+                } else  {
+                    menuescondido.style.display = 'block'
+                }
+            }
+
+        const menuLinks = document.querySelectorAll ('#menuescondido a');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuescondido.style.display='none';
+            })
+        });
+    }
+   
+    </script>
 </body>
 </html>
