@@ -21,7 +21,11 @@
 
     button {
         order: 3;
+    }
+
+    #estilo-botao {
         margin-right: 100px;
+
     }
 
     ul {
