@@ -37,6 +37,10 @@
     }
 
     #menuescondido {
+        display: none;
+    }
+
+    #menu-desktop {
         display: flex;
     }
 
@@ -175,8 +179,12 @@
     }
 
     #menuescondido {
+        display: none   ;
+    } 
+    
+    #menu-desktop {
         display: flex;
-    }        
+    }
 
 
 
